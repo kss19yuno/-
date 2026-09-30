@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇫🇷 フランス革命暦</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading">📜 革命暦を開いています...</div>
+<div id="particles"></div>
+<div class="card">
+<h1>🇫🇷 French Republican Calendar</h1>
+<div id="year"></div><div id="gregorian">西暦</div>
+<div id="month">メシドール</div><div id="day">10日</div>
+<div id="meaning">Messidor · 収穫月</div>
+<div class="symbol"><div id="symbolIcon">🌾</div><h2 id="symbolName">小麦</h2></div>
+<div id="clock">4:38:72</div><div id="normalClock">12:34:56</div>
+<div class="progress"><div id="bar"></div></div>
+<div id="history">📜 歴史メモ</div>
+<div class="monthButtons"><button onclick="changeMonth(-1)">←</button><span id="viewMonth">メシドール</span><button onclick="changeMonth(1)">→</button></div>
+<div id="calendar"></div>
+<section class="sectionBox"><h2>🔄 革命暦変換</h2><input id="inputDate" type="date"><button onclick="convertDate()">変換！</button><div id="convertResult"></div><button onclick="jumpToDate()">🕰️ この日の革命暦を見る</button><div id="jumpResult"></div></section>
+<section id="quiz"><h2>🎓 革命暦クイズ</h2><div id="question"></div><button onclick="answer(0)" id="a"></button><button onclick="answer(1)" id="b"></button><button onclick="answer(2)" id="c"></button><div id="score"></div></section>
+<div class="memo"><h3>🖋 今日の記録</h3><textarea id="memoText" placeholder="ここに書き込む..."></textarea></div>
+</div>
+<script src="script.js"></script>
+</body></html>
